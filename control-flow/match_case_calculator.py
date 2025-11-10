@@ -12,22 +12,23 @@ if num2 == 0:
     sys.exit(1)
 
 else:
-    if oparation_type == '+':
-        result = num1 + num2
-        print(f'The result is {result}.')
+    match oparation_type:
+        case '+':
+            result = num1 + num2
+            print(f'The result is {result}.')
 
-    elif oparation_type == '-':
-        result = num1 + num2
-        print(f'The result is {result}.')
+        case '-':
+            result = num1 + num2
+            print(f'The result is {result}.')
 
-    elif oparation_type == '*':
-        result = num1 * num2
-        print(f'The result is {result}.')
+        case '*':
+            result = num1 * num2
+            print(f'The result is {result}.')
 
-    elif oparation_type == '/':
-        result = num1 / num2
-        print(f'The result is {result}.')
+        case '/':
+            result = num1 / num2
+            print(f'The result is {result}.')
 
-    else:
-        print('Incorrect Input')
+        case _:
+            print('Incorrect Input')
 
