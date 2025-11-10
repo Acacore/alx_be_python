@@ -1,5 +1,5 @@
-task = 'Enter your task: '
-priority = 'Priority (high/medium/low): '
+task = "Enter your task: "
+priority = "Priority (high/medium/low): "
 time_bound  = "Is it time-bound? (yes/no): "
 
 match priority:
