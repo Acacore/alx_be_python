@@ -1,6 +1,6 @@
-n = int(input('Enter the size of pattern: '))
+size = int(input('Enter the size of pattern: '))
 
-for i in range(n):
-    for j in range(n):
+for i in range(size):
+    for j in range(size):
         print("*", end="")
     print("\n")
