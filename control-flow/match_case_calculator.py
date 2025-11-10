@@ -5,7 +5,7 @@ num1 = input('Enter the first number:')
 num2 = input('Enter the second number:')
 num1 = int(num1)
 num2 = int(num2)
-oparation_type = input('Choose the operation (+, -, *, /)')
+oparation_type = input('Choose the operation (+, -, *, /): ')
 
 if num2 == 0:
     print('Cannot divide by zero.')
