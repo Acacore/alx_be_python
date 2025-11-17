@@ -22,7 +22,7 @@ def main():
         tempreture = convert_to_celsius(tempreture_to_convert)
         tempreture = f'{tempreture_to_convert} is {tempreture}C'
     else:
-        tempreture = 'Invalid input'
+        tempreture = 'Invalid temperature. Please enter a numeric value.'
     
     print(tempreture)
 
