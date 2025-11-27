@@ -6,7 +6,12 @@ class BankAccount:
         return self.account_balance + amount
 
     def withdraw(self, amount):
-        return self.account_balance - amount
+        balance = self.account_balance - amount
+        
+        if balance >= 0:
+            return balance
+        else:
+            return "Insufficient funds."
 
     def display_balance(self):
-        return f"Current Balance:{self.account_balance}"
+        return f"Current Balance: ${self.account_balance}"
