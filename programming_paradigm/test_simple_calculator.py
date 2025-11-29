@@ -1,26 +1,25 @@
 import unittest
 from simple_calculator import SimpleCalculator
 
-class SimpleCalculator():
-    ...
 
 class TestSimpleCalculator(unittest.TestCase):
-    def test_add(self):
-        self.assertEqual(SimpleCalculator.add(self, 4,3),7)
 
-    def test_subtract(self):
-        self.assertEqual(SimpleCalculator.subtract(self, 4,3),1)
+    def setUp(self):
+        self.calc = SimpleCalculator()
+
+    def test_addition(self):
+        self.assertEqual(self.calc.add(4, 3), 7)
+    
+
+    def test_subtraction(self):
+        self.assertEqual(self.calc.subtract(4, 3), 1)
 
     def test_multiply(self):
-        self.assertEqual(SimpleCalculator.multiply(self, 4,3),12)
-    
-    def test_divide(self):
-        self.assertEqual(SimpleCalculator.divide(self, 12,3), 4)
-        self.assertEqual(SimpleCalculator.divide(self, 12,0), None)
+        self.assertEqual(self.calc.multiply(4, 3), 12)
 
-    # def test_divide(self):
-    #     with self.assertRaises(ZeroDivisionError):
-    #         SimpleCalculator.divide(self, 12, 0)
+    def test_divide(self):
+        self.assertEqual(self.calc.divide(12,3), 4)
+        self.assertEqual(self.calc.divide(12,0), None)
 
 
         
