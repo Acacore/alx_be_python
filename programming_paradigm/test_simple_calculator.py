@@ -1,5 +1,7 @@
 import unittest
-from simple_calculator import *
+from simple_calculator import SimpleCalculator
+
+
 
 class TestSimpleCalculator(unittest.TestCase):
     def test_add(self):
@@ -18,6 +20,7 @@ class TestSimpleCalculator(unittest.TestCase):
     # def test_divide(self):
     #     with self.assertRaises(ZeroDivisionError):
     #         SimpleCalculator.divide(self, 12, 0)
+
 
         
 
