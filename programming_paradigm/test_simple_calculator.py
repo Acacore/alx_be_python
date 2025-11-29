@@ -1,7 +1,8 @@
 import unittest
 from simple_calculator import SimpleCalculator
 
-
+class SimpleCalculator():
+    ...
 
 class TestSimpleCalculator(unittest.TestCase):
     def test_add(self):
