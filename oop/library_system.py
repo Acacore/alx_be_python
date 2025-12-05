@@ -1,10 +1,10 @@
 
 
 class Book:
-    def __init__(self, title:str, author:str, year:int=0):
+    def __init__(self, title:str, author:str):
         self.title = title
         self.author = author
-        self.year = year
+    
     def __str__(self):
         return f"Book: {self.title} by {self.author}"
     
@@ -37,6 +37,6 @@ class Library:
 
     def list_books(self):
         for book in self.books:
-            print(book.title, book.author) 
+            print(book) 
         
     
