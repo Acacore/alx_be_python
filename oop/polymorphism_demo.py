@@ -15,10 +15,10 @@ class Rectangle(Shape):
     
 
 class Circle(Shape):
-    def __init__(self, radus):
-        self.radus = radus
+    def __init__(self, raduis):
+        self.radus = raduis
         
     def area(self):
-        return math.pi * (self.radus ** 2)
+        return math.pi * (self.raduis ** 2)
 
 
