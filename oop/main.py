@@ -1,9 +1,19 @@
 from library_system import Book, EBook, PrintBook, Library
 from book_class import Book
 from polymorphism_demo import Shape, Rectangle, Circle
+from class_static_methods_demo import Calculator
 import math
 
 def main():
+
+    # Using the static method
+    sum_result = Calculator.add(10, 5)
+    print(f"The sum is: {sum_result}")
+
+    # Using the class method
+    product_result = Calculator.multiply(10, 5)
+    print(f"The product is: {product_result}")
+
 
     shapes = [
         Rectangle(10, 5),
