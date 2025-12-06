@@ -6,15 +6,19 @@ class Shape:
 
 
 class Rectangle(Shape):
-    def area(self, width, height):
+    def __init__(self, width, height):
         self.width = width
         self.height = height
-        return width * height
+
+    def area(self):
+        return self.width * self.height
     
 
 class Circle(Shape):
-    def area(self, radus):
+    def __init__(self, radus):
         self.radus = radus
-        return math.pi * (radus ** 2)
+        
+    def area(self):
+        return math.pi * (self.radus ** 2)
 
 
